@@ -1,0 +1,125 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "nombreNuevoCandidato",
+				"type": "string"
+			}
+		],
+		"name": "agregarCandidato",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "nombreCandidato1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "nombreCandidato2",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "indiceCandidato",
+				"type": "uint256"
+			}
+		],
+		"name": "votar",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "candidatos",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "nombre",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "votos",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "haVotado",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "obtenerResultados",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votos",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Votacion.Candidato[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
